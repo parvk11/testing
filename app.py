@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 from pydantic import BaseModel
-import pandas as pd
 import tensorflow as tf
 from tensorflow import keras
 import numpy as np
