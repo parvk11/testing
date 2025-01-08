@@ -1,6 +1,9 @@
-uvicorn
 fastapi
+uvicorn
+passlib[bcrypt]
+python-jose
 pydantic
 tensorflow
 numpy
+sqlalchemy
 joblib
