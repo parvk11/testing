@@ -81,7 +81,7 @@ def register(username: str = Query(...), password: str = Query(...), db: Session
     db.refresh(new_user)
     return {"message": "User created successfully"}
 
-@app.post("/token")
+@app.post("/api/token")
 def login(form_data: OAuth2PasswordRequestForm = Depends(), db: Session = Depends(get_db)):
     print("hello")
     user = db.query(User).filter(User.username == form_data.username).first()
